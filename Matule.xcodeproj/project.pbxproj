@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E371C082D644B34007F78EC /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C072D644B34007F78EC /* Auth */; };
+		6E371C0A2D644B34007F78EC /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C092D644B34007F78EC /* Functions */; };
+		6E371C0C2D644B34007F78EC /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C0B2D644B34007F78EC /* PostgREST */; };
+		6E371C0E2D644B34007F78EC /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C0D2D644B34007F78EC /* Realtime */; };
+		6E371C102D644B34007F78EC /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C0F2D644B34007F78EC /* Storage */; };
+		6E371C122D644B34007F78EC /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C112D644B34007F78EC /* Supabase */; };
+		6E371C152D644C86007F78EC /* SwipeActions in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C142D644C86007F78EC /* SwipeActions */; };
+		6E371C182D644CB4007F78EC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C172D644CB4007F78EC /* Kingfisher */; };
+		6E371C1B2D644D28007F78EC /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 6E371C1A2D644D28007F78EC /* AlertToast */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E371BEA2D6449CE007F78EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E371BD12D6449CC007F78EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E371BD82D6449CC007F78EC;
+			remoteInfo = Matule;
+		};
+		6E371BF42D6449CE007F78EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E371BD12D6449CC007F78EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E371BD82D6449CC007F78EC;
+			remoteInfo = Matule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E371BD92D6449CC007F78EC /* Matule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E371BE92D6449CE007F78EC /* MatuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E371BF32D6449CE007F78EC /* MatuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6E371BDB2D6449CC007F78EC /* Matule */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Matule;
+			sourceTree = "<group>";
+		};
+		6E371BEC2D6449CE007F78EC /* MatuleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MatuleTests;
+			sourceTree = "<group>";
+		};
+		6E371BF62D6449CE007F78EC /* MatuleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MatuleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E371BD62D6449CC007F78EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E371C0C2D644B34007F78EC /* PostgREST in Frameworks */,
+				6E371C0A2D644B34007F78EC /* Functions in Frameworks */,
+				6E371C122D644B34007F78EC /* Supabase in Frameworks */,
+				6E371C1B2D644D28007F78EC /* AlertToast in Frameworks */,
+				6E371C152D644C86007F78EC /* SwipeActions in Frameworks */,
+				6E371C182D644CB4007F78EC /* Kingfisher in Frameworks */,
+				6E371C082D644B34007F78EC /* Auth in Frameworks */,
+				6E371C102D644B34007F78EC /* Storage in Frameworks */,
+				6E371C0E2D644B34007F78EC /* Realtime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BE62D6449CE007F78EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BF02D6449CE007F78EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E371BD02D6449CC007F78EC = {
+			isa = PBXGroup;
+			children = (
+				6E371BDB2D6449CC007F78EC /* Matule */,
+				6E371BEC2D6449CE007F78EC /* MatuleTests */,
+				6E371BF62D6449CE007F78EC /* MatuleUITests */,
+				6E371BDA2D6449CC007F78EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E371BDA2D6449CC007F78EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E371BD92D6449CC007F78EC /* Matule.app */,
+				6E371BE92D6449CE007F78EC /* MatuleTests.xctest */,
+				6E371BF32D6449CE007F78EC /* MatuleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E371BD82D6449CC007F78EC /* Matule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E371BFD2D6449CE007F78EC /* Build configuration list for PBXNativeTarget "Matule" */;
+			buildPhases = (
+				6E371BD52D6449CC007F78EC /* Sources */,
+				6E371BD62D6449CC007F78EC /* Frameworks */,
+				6E371BD72D6449CC007F78EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6E371BDB2D6449CC007F78EC /* Matule */,
+			);
+			name = Matule;
+			packageProductDependencies = (
+				6E371C072D644B34007F78EC /* Auth */,
+				6E371C092D644B34007F78EC /* Functions */,
+				6E371C0B2D644B34007F78EC /* PostgREST */,
+				6E371C0D2D644B34007F78EC /* Realtime */,
+				6E371C0F2D644B34007F78EC /* Storage */,
+				6E371C112D644B34007F78EC /* Supabase */,
+				6E371C142D644C86007F78EC /* SwipeActions */,
+				6E371C172D644CB4007F78EC /* Kingfisher */,
+				6E371C1A2D644D28007F78EC /* AlertToast */,
+			);
+			productName = Matule;
+			productReference = 6E371BD92D6449CC007F78EC /* Matule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E371BE82D6449CE007F78EC /* MatuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E371C002D6449CE007F78EC /* Build configuration list for PBXNativeTarget "MatuleTests" */;
+			buildPhases = (
+				6E371BE52D6449CE007F78EC /* Sources */,
+				6E371BE62D6449CE007F78EC /* Frameworks */,
+				6E371BE72D6449CE007F78EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E371BEB2D6449CE007F78EC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6E371BEC2D6449CE007F78EC /* MatuleTests */,
+			);
+			name = MatuleTests;
+			packageProductDependencies = (
+			);
+			productName = MatuleTests;
+			productReference = 6E371BE92D6449CE007F78EC /* MatuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E371BF22D6449CE007F78EC /* MatuleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E371C032D6449CE007F78EC /* Build configuration list for PBXNativeTarget "MatuleUITests" */;
+			buildPhases = (
+				6E371BEF2D6449CE007F78EC /* Sources */,
+				6E371BF02D6449CE007F78EC /* Frameworks */,
+				6E371BF12D6449CE007F78EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E371BF52D6449CE007F78EC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6E371BF62D6449CE007F78EC /* MatuleUITests */,
+			);
+			name = MatuleUITests;
+			packageProductDependencies = (
+			);
+			productName = MatuleUITests;
+			productReference = 6E371BF32D6449CE007F78EC /* MatuleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E371BD12D6449CC007F78EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6E371BD82D6449CC007F78EC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					6E371BE82D6449CE007F78EC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6E371BD82D6449CC007F78EC;
+					};
+					6E371BF22D6449CE007F78EC = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6E371BD82D6449CC007F78EC;
+					};
+				};
+			};
+			buildConfigurationList = 6E371BD42D6449CC007F78EC /* Build configuration list for PBXProject "Matule" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E371BD02D6449CC007F78EC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				6E371C132D644C86007F78EC /* XCRemoteSwiftPackageReference "SwipeActions" */,
+				6E371C162D644CB4007F78EC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6E371C192D644D28007F78EC /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6E371BDA2D6449CC007F78EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E371BD82D6449CC007F78EC /* Matule */,
+				6E371BE82D6449CE007F78EC /* MatuleTests */,
+				6E371BF22D6449CE007F78EC /* MatuleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E371BD72D6449CC007F78EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BE72D6449CE007F78EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BF12D6449CE007F78EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E371BD52D6449CC007F78EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BE52D6449CE007F78EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E371BEF2D6449CE007F78EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E371BEB2D6449CE007F78EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E371BD82D6449CC007F78EC /* Matule */;
+			targetProxy = 6E371BEA2D6449CE007F78EC /* PBXContainerItemProxy */;
+		};
+		6E371BF52D6449CE007F78EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E371BD82D6449CC007F78EC /* Matule */;
+			targetProxy = 6E371BF42D6449CE007F78EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E371BFB2D6449CE007F78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E371BFC2D6449CE007F78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E371BFE2D6449CE007F78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Matule/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.Matule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E371BFF2D6449CE007F78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Matule/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.Matule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E371C012D6449CE007F78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.MatuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Matule";
+			};
+			name = Debug;
+		};
+		6E371C022D6449CE007F78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.MatuleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Matule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Matule";
+			};
+			name = Release;
+		};
+		6E371C042D6449CE007F78EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.MatuleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Matule;
+			};
+			name = Debug;
+		};
+		6E371C052D6449CE007F78EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = evgeny.MatuleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Matule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E371BD42D6449CC007F78EC /* Build configuration list for PBXProject "Matule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E371BFB2D6449CE007F78EC /* Debug */,
+				6E371BFC2D6449CE007F78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E371BFD2D6449CE007F78EC /* Build configuration list for PBXNativeTarget "Matule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E371BFE2D6449CE007F78EC /* Debug */,
+				6E371BFF2D6449CE007F78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E371C002D6449CE007F78EC /* Build configuration list for PBXNativeTarget "MatuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E371C012D6449CE007F78EC /* Debug */,
+				6E371C022D6449CE007F78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E371C032D6449CE007F78EC /* Build configuration list for PBXNativeTarget "MatuleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E371C042D6449CE007F78EC /* Debug */,
+				6E371C052D6449CE007F78EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		6E371C132D644C86007F78EC /* XCRemoteSwiftPackageReference "SwipeActions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aheze/SwipeActions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		6E371C162D644CB4007F78EC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		6E371C192D644D28007F78EC /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E371C072D644B34007F78EC /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		6E371C092D644B34007F78EC /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		6E371C0B2D644B34007F78EC /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		6E371C0D2D644B34007F78EC /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		6E371C0F2D644B34007F78EC /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		6E371C112D644B34007F78EC /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C062D644B34007F78EC /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		6E371C142D644C86007F78EC /* SwipeActions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C132D644C86007F78EC /* XCRemoteSwiftPackageReference "SwipeActions" */;
+			productName = SwipeActions;
+		};
+		6E371C172D644CB4007F78EC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C162D644CB4007F78EC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6E371C1A2D644D28007F78EC /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E371C192D644D28007F78EC /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6E371BD12D6449CC007F78EC /* Project object */;
+}

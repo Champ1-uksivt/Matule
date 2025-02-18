@@ -1,0 +1,96 @@
+{
+  "originHash" : "a1387083a1cc842f2a19ef22e314b896b97058d0a239dab343e71eaed214212f",
+  "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "3db26ab625d194c38e68c1a40e43d1bc12743fe0",
+        "version" : "8.2.0"
+      }
+    },
+    {
+      "identity" : "supabase-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/supabase/supabase-swift.git",
+      "state" : {
+        "revision" : "660f709d2043cf93cc7af2cb2eae4cc4e4c00b45",
+        "version" : "2.24.6"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "ae33e5941bb88d88538d0a6b19ca0b01e6c76dcf",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swift-clocks",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-clocks",
+      "state" : {
+        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+        "version" : "1.0.6"
+      }
+    },
+    {
+      "identity" : "swift-concurrency-extras",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-concurrency-extras",
+      "state" : {
+        "revision" : "82a4ae7170d98d8538ec77238b7eb8e7199ef2e8",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "45305d32cfb830faebcaa9a7aea66ad342637518",
+        "version" : "3.11.1"
+      }
+    },
+    {
+      "identity" : "swift-http-types",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-http-types.git",
+      "state" : {
+        "revision" : "ef18d829e8b92d731ad27bb81583edd2094d1ce3",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "swipeactions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/aheze/SwipeActions.git",
+      "state" : {
+        "revision" : "41e6f6dce02d8cfa164f8c5461a41340850ca3ab",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "xctest-dynamic-overlay",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/xctest-dynamic-overlay",
+      "state" : {
+        "revision" : "b444594f79844b0d6d76d70fbfb3f7f71728f938",
+        "version" : "1.5.1"
+      }
+    }
+  ],
+  "version" : 3
+}
