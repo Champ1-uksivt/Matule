@@ -16,7 +16,7 @@ struct ProductFromCategoryView: View {
             VStack {
                 ForEach(model.categories.indices, id: \.self) { index in
                     if index == model.selectedCategory {
-                        Text(model.categories[index].name)
+                        Text(model.categories[index].locizedname)
                             .customFont(fontSize: 16, weight: .regular, foreground: .text)
                             .frame(maxWidth: .infinity)
                             .overlay {
