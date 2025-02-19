@@ -12,12 +12,12 @@ extension String {
     func validateEmail() -> Bool {
         // валидация email
 
-        let emailregex = "[a-z0-9&._+-]+@[a-z0-9_-]+\\.[a-z]{2,}"
+        let emailregex = "[0-9a-z&._+-]+@[0-9a-z_-]+\\.[a-z]{2,}"
         return NSPredicate(format: "SELF MATCHES %@", emailregex).evaluate(with: self)
     }
     func validatePassword() -> Bool {
         // валидация пароля
-            let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,12}$"
+            let passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9]{6,12}$"
             return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: self)
         }
 }

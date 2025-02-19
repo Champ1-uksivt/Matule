@@ -55,8 +55,8 @@ struct LoginView: View {
                     Text("Войти")
                     
                 }
-                .buttonStyle(MainButtonStyle(background: .accent, foreground: .block))
                 .accessibilityIdentifier("btn")
+                .buttonStyle(MainButtonStyle(background: .accent, foreground: .block))
                 Spacer()
                 HStack {
                     Text("Вы впервые?")

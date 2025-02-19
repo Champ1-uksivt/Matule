@@ -9,8 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text("home")
-            .accessibilityIdentifier("home")
+        VStack {
+            Text("home")
+                .accessibilityIdentifier("home")
+        }
     }
 }
 
