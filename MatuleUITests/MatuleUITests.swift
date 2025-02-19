@@ -3,7 +3,7 @@
 //  MatuleUITests
 //
 //  Created by uksivt on 18.02.2025.
-//
+//  UI тесты
 
 import XCTest
 
@@ -24,13 +24,13 @@ final class MatuleUITests: XCTestCase {
     
     @MainActor
     func testIncorrectEmail() throws {
-        // UI tests must launch the application that they test.
+        // запускать с включенной англ раскладкой!!!
         let app = XCUIApplication()
         app.launch()
         
         let email = app.textFields["email"]
         let password = app.secureTextFields["password"]
-        let btn = app.textFields["btn"]
+        let btn = app.buttons["btn"]
         
         email.tap()
         email.typeText("qwe")
@@ -45,13 +45,13 @@ final class MatuleUITests: XCTestCase {
     
     @MainActor
     func testIncorrectPassword() throws {
-        // UI tests must launch the application that they test.
+        // запускать с включенной англ раскладкой!!!
         let app = XCUIApplication()
         app.launch()
         
         let email = app.textFields["email"]
         let password = app.secureTextFields["password"]
-        let btn = app.textFields["btn"]
+        let btn = app.buttons["btn"]
         
         email.tap()
         email.typeText("e.mikhaylov2006@gmail.com")
@@ -65,45 +65,45 @@ final class MatuleUITests: XCTestCase {
     }
     
     @MainActor
-        func testCorrectAuth() throws {
-            // UI tests must launch the application that they test.
-            let app = XCUIApplication()
-            app.launch()
-            
-            let email = app.textFields["email"]
-            let password = app.secureTextFields["password"]
-            let btn = app.textFields["btn"]
-            
-            email.tap()
-            email.typeText("e.mikhaylov2006@gmail.com")
-            password.tap()
-            password.typeText("qweQWE123")
-            app.keyboards.buttons["return"].tap()
-            btn.tap()
-            
-            XCTAssertTrue(app.staticTexts["home"].waitForExistence(timeout: 10))
-            
-        }
+    func testCorrectAuth() throws {
+        // запускать с включенной англ раскладкой!!!
+        let app = XCUIApplication()
+        app.launch()
+        
+        let email = app.textFields["email"]
+        let password = app.secureTextFields["password"]
+        let btn = app.buttons["btn"]
+        
+        email.tap()
+        email.typeText("e.mikhaylov2006@gmail.com")
+        password.tap()
+        password.typeText("qweQWE123")
+        app.keyboards.buttons["return"].tap()
+        btn.tap()
+        
+        XCTAssertTrue(app.staticTexts["home"].waitForExistence(timeout: 10))
+        
+    }
     
     @MainActor
-            func testIncorrectAuth() throws {
-                // UI tests must launch the application that they test.
-                let app = XCUIApplication()
-                app.launch()
-                
-                let email = app.textFields["email"]
-                let password = app.secureTextFields["password"]
-                let btn = app.textFields["btn"]
-                
-                email.tap()
-                email.typeText("e.mikhaylov2006@gmail.com")
-                password.tap()
-                password.typeText("qwe")
-                app.keyboards.buttons["return"].tap()
-                btn.tap()
-                
-                XCTAssertTrue(app.alerts.firstMatch.exists)
-
-            }
+    func testIncorrectAuth() throws {
+        // запускать с включенной англ раскладкой!!!
+        let app = XCUIApplication()
+        app.launch()
+        
+        let email = app.textFields["email"]
+        let password = app.secureTextFields["password"]
+        let btn = app.buttons["btn"]
+        
+        email.tap()
+        email.typeText("e.mikhaylov2006@gmail.com")
+        password.tap()
+        password.typeText("qwe")
+        app.keyboards.buttons["return"].tap()
+        btn.tap()
+        
+        XCTAssertTrue(app.alerts.firstMatch.exists)
+        
+    }
     
 }

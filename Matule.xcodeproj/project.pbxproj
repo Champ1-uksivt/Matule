@@ -41,9 +41,22 @@
 		6E371BF32D6449CE007F78EC /* MatuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatuleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6E874E022D658B4600B06C38 /* Exceptions for "Matule" folder in "Matule" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6E371BD82D6449CC007F78EC /* Matule */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6E371BDB2D6449CC007F78EC /* Matule */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6E874E022D658B4600B06C38 /* Exceptions for "Matule" folder in "Matule" target */,
+			);
 			path = Matule;
 			sourceTree = "<group>";
 		};
@@ -435,6 +448,7 @@
 				DEVELOPMENT_TEAM = 95K5G9X4QU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Matule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,6 +479,7 @@
 				DEVELOPMENT_TEAM = 95K5G9X4QU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Matule/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
