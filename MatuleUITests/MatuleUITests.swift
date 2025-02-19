@@ -2,7 +2,7 @@
 //  MatuleUITests.swift
 //  MatuleUITests
 //
-//  Created by uksivt on 18.02.2025.
+//  Created by Михайлов Евгений on 18.02.2025.
 //  UI тесты
 
 import XCTest

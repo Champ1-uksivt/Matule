@@ -16,4 +16,27 @@ final class SupabaseService {
     func login(email: String, password: String) async throws {
         try await supabase.auth.signIn(email: email, password: password)
     }
+    
+    
+    func fetchCategory() async throws -> [Category]{
+        try await supabase.from("categories").select().execute().value
+    }
+    func fetchSneakers() async throws -> [Sneaker] {
+        var sneakers: [Sneaker] = try await supabase.from("sneakers").select().execute().value
+        for i in sneakers.indices {
+            sneakers[i].imageULR = try await fetchImage(id: sneakers[i].id)
+        }
+        return sneakers
+
+    }
+    func fetchImage(id: String, storage: String = "assets") async throws -> URL{
+        try supabase.storage.from(storage).getPublicURL(path: "\(id).png", download: false)
+    }
+    func fetchAds() async throws -> [Ad] {
+        var ads: [Ad] = try await supabase.from("ads").select().execute().value
+        for i in ads.indices {
+            ads[i].imageURL = try await fetchImage(id: ads[i].id, storage: "ads")
+        }
+        return ads
+    }
 }

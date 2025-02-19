@@ -2,7 +2,7 @@
 //  MatuleTests.swift
 //  MatuleTests
 //
-//  Created by uksivt on 18.02.2025.
+//  Created by Михайлов Евгений on 18.02.2025.
 //  Модульные тесты
 
 import Testing

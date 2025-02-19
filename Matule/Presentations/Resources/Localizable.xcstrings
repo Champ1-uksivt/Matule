@@ -4,6 +4,22 @@
     "" : {
 
     },
+    "BEST SELLER" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BEST SELLER"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BEST SELLER"
+          }
+        }
+      }
+    },
     "Email" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -22,6 +38,7 @@
       }
     },
     "home" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -49,6 +66,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        }
+      }
+    },
+    "Акции" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Arrivals"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Акции"
+          }
+        }
+      }
+    },
+    "В вашей комнате много красивых и\nпривлекательных растений" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There Are Many Beautiful And Attractive Plants To Your Room"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В вашей комнате много красивых и\nпривлекательных растений"
           }
         }
       }
@@ -85,6 +134,22 @@
         }
       }
     },
+    "Все" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See all"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все"
+          }
+        }
+      }
+    },
     "Вы впервые?" : {
       "localizations" : {
         "en" : {
@@ -97,6 +162,54 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Вы впервые?"
+          }
+        }
+      }
+    },
+    "Главная" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
+          }
+        }
+      }
+    },
+    "Далее" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
+          }
+        }
+      }
+    },
+    "ДОБРО\nПОЖАЛОВАТЬ" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ДОБРО\nПОЖАЛОВАТЬ"
           }
         }
       }
@@ -117,6 +230,70 @@
         }
       }
     },
+    "Избранное" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorites"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Избранное"
+          }
+        }
+      }
+    },
+    "Категории" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Category"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Категории"
+          }
+        }
+      }
+    },
+    "Начать" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let’s"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
+          }
+        }
+      }
+    },
+    "Начнем\nпутешествие" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let’s Start Journey "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начнем\nпутешествие"
+          }
+        }
+      }
+    },
     "Ошибка" : {
       "localizations" : {
         "en" : {
@@ -133,6 +310,9 @@
         }
       }
     },
+    "Ошибка сети" : {
+
+    },
     "Пароль" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -145,7 +325,42 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "пароль"
+            "value" : "Пароль"
+          }
+        }
+      }
+    },
+    "Поиск" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Looking for shoes"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
+          }
+        }
+      }
+    },
+    "Попробовать снова" : {
+
+    },
+    "Популярное" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular Shoes"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Популярное"
           }
         }
       }
@@ -165,6 +380,9 @@
           }
         }
       }
+    },
+    "Проверьте подключение к интернету" : {
+
     },
     "Пропустить" : {
       "localizations" : {
@@ -194,6 +412,38 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Создать пользователя"
+          }
+        }
+      }
+    },
+    "У Вас Есть Сила,\nЧтобы" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You Have the Power To"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У Вас Есть Сила,\nЧтобы"
+          }
+        }
+      }
+    },
+    "Умная, великолепная и модная\nколлекция Изучите сейчас" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smart, Gorgeous & Fashionable Collection Explore Now"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Умная, великолепная и модная\nколлекция Изучите сейчас"
           }
         }
       }

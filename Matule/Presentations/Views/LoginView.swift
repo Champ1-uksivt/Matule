@@ -2,9 +2,12 @@
 //  LoginView.swift
 //  Matule
 //
-//  Created by uksivt on 19.02.2025.
+//  Created by Евгений Михайлов on 19.02.2025.
 //  Представление авторизации
-//  Данные для входа
+
+
+
+//  !!!Данные для входа!!!
 //  email: e.mikhaylov2006@gmail.com
 //  password: qweQWE123
 
@@ -13,7 +16,6 @@ import SwiftUI
 struct LoginView: View {
     @StateObject var model = LoginViewModel()
     var body: some View {
-        NavigationStack{
             VStack {
                 NavigationLink {
                     MainView()
@@ -87,7 +89,7 @@ struct LoginView: View {
             }
 
         }
-    }
+    
 }
 
 #Preview {

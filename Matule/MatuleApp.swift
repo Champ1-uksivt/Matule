@@ -2,7 +2,7 @@
 //  MatuleApp.swift
 //  Matule
 //
-//  Created by uksivt on 18.02.2025.
+//  Created by evgeny on 18.02.2025.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct MatuleApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            Onboards()
         }
     }
 }
