@@ -11,7 +11,7 @@ import SwiftUI
 struct MatuleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
