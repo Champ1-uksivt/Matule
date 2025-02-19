@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CustomTextField: View {
-    var label: String?
+    var label: LocalizedStringResource?
     var placeholder: String
     @Binding var text: String
     var isSecure: Bool = false
-    init(label: String?, placeholder: String, text: Binding<String>, isSecure: Bool = false ) {
+    init(label: LocalizedStringResource?, placeholder: String, text: Binding<String>, isSecure: Bool = false ) {
         self.label = label
         self.placeholder = placeholder
         self._text = text
