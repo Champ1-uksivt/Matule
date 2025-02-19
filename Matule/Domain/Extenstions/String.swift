@@ -17,7 +17,7 @@ extension String {
     }
     func validatePassword() -> Bool {
         // валидация пароля
-            let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9)[a-zA-Z0-9]{6,12}$"
+            let passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{6,12}$"
             return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: self)
         }
 }

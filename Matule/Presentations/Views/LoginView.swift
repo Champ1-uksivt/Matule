@@ -80,6 +80,12 @@ struct LoginView: View {
                 MainView()
                     .navigationBarBackButtonHidden()
             }
+            .alert("Ошибка", isPresented: $model.isError) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(model.messageError)
+            }
+
         }
     }
 }
