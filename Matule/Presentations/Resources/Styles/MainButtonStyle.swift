@@ -18,5 +18,6 @@ struct MainButtonStyle : ButtonStyle {
             .background(background)
             .customFont(fontSize: 14, weight: .regular, foreground: foreground)
             .cornerRadius(14)
+            .opacity(configuration.isPressed ? 0.75 : 1)
     }
 }

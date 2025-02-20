@@ -25,6 +25,7 @@ final class MainViewModel : ObservableObject {
     @Published var isLoadingProccess = false
     @Published var sneakers: [Sneaker] = []
     @Published var categories: [Category] = []
+    @Published var address = ""
     @Published var ads: [Ad] = []
     @Published var navigationStack: [Tabs] = [.home]
     @Published var selectedCategory = -1 {

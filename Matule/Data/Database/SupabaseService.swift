@@ -98,4 +98,24 @@ final class SupabaseService {
     func deleteFromFavorite(sneaker: String, user: String) async throws {
         try await supabase.from("favorites").delete().eq("user", value: user).eq("sneaker", value: sneaker).execute()
     }
-}
+    
+    func signUp(email: String, password: String, name: String) async throws {
+        try await supabase.auth.signUp(email: email, password: password)
+        try await supabase.auth.update(user: UserAttributes(data: ["name" : AnyJSON(name)]))
+    }
+    
+    func clear() async throws {
+        try await supabase.auth.signOut()
+    }
+    func sendCodeToEmail(for email: String) async throws {
+        try await supabase.auth.resetPasswordForEmail(email)
+    }
+    
+    func verifyCode(code: String, email: String) async throws {
+        try await supabase.auth.verifyOTP(email: email, token: code, type: .recovery)
+    }
+    
+    func updatePassword(password: String) async throws {
+        try await supabase.auth.update(user: UserAttributes(password: password))
+    }
+ }

@@ -89,12 +89,11 @@ struct CartView: View {
 
                 }
                 .padding(.bottom, 32)
-                Button {
-                    
-                } label: {
+                NavigationLink(destination: CheckoutView( model: model).navigationBarBackButtonHidden()) {
                     Text("Оформить Заказ")
                 }
                 .buttonStyle(MainButtonStyle(background: .accent, foreground: .block))
+                .disabled(model.costCart == 0.0)
                 .padding(.bottom, 32)
             }
             .padding(.horizontal, 20)
