@@ -2,8 +2,8 @@
 //  ProductInBasketView.swift
 //  Matule
 //
-//  Created by uksivt on 19.02.2025.
-//
+//  Created by Михайлов Евгений on 19.02.2025.
+//  UI элемент карточки товара в корзине
 
 import SwiftUI
 import SwipeActions
@@ -17,7 +17,7 @@ struct ProductInBasketView: View {
             HStack {
                 RoundedRectangle(cornerRadius: 16)
                     .foregroundColor(Color.background)
-                    .frame(maxWidth: UIScreen.main.bounds.width*0.232, maxHeight: UIScreen.main.bounds.width*0.232)
+                    .frame(width: UIScreen.main.bounds.width*0.232, height: UIScreen.main.bounds.width*0.232)
                     .overlay {
                         KFImage(sneaker.imageULR)
                             .resizable()
@@ -41,30 +41,33 @@ struct ProductInBasketView: View {
         }, leadingActions: { la in
             VStack {
                 Button {
-                    
+                    model.updateCart(sneaker: sneaker, value: 1)
                 } label: {
                     Image(systemName: "plus")
                         .foregroundColor(.block)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                Text("1")
+                Text("\(sneaker.countInBasket ?? 1)")
                     .customFont(fontSize: 14, weight: .regular, foreground: .block)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 Button {
-                                    
-                                } label: {
-                                    Image(systemName: "minus")
-                                        .foregroundColor(.block)
+                    model.updateCart(sneaker: sneaker, value: -1)
 
-                                }
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-
+                } label: {
+                    Image(systemName: "minus")
+                        .foregroundColor(.block)
+                    
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.accent)
         }, trailingActions: { ta in
             VStack {
-                Button(action: {}) {
+                Button(action: {
+                    model.deleteFromCart(sneaker: sneaker)
+                }) {
                     Image("basket")
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -82,7 +85,4 @@ struct ProductInBasketView: View {
 
 #Preview {
     ProductInBasketView(model: MainViewModel(), sneaker: Sneaker(id: "qweqwe", name: "Nike Air Max", price: 9123.123123, category: 1, description: "QWE QWEQWE  QWE QWE ", bestseller: true, fullname: "Nie Air Max 270", imageULR: URL(string: "https://dnhbfwerqzathenuvacj.supabase.co/storage/v1/object/public/assets//631b7043-e9f1-4c42-a8a1-8a2e55ec6b48.png")))
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.disable)
 }

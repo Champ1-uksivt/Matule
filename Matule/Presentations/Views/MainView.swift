@@ -26,23 +26,22 @@ struct MainView: View {
 
             HStack {
                 Button {
-                    
+                    model.navigationStack.append(.home)
                 } label: {
-                    Image("home.select")
+                    Image(model.navigationStack.last == .home ? "home.select" : "home.unselect")
                         .resizable()
                         .scaledToFit()
                 }
                 .frame(maxWidth: 24, maxHeight: 24)
                 Spacer()
                 Button {
-                    
+                    model.navigationStack.append(.favorites)
+
                 } label: {
-                    Image("favorites.unselect")
+                    Image(model.navigationStack.last == .favorites ? "favorites.select" : "favorites.unselect")
                 }
                 Spacer()
-                Button {
-                    
-                } label: {
+                NavigationLink(destination: CartView(model: model).navigationBarBackButtonHidden()) {
                     ZStack {
                         Circle()
                             .foregroundColor(Color.accent)
@@ -78,6 +77,7 @@ struct MainView: View {
             } message: {
                 Text("Проверьте подключение к интернету")
             }
+            .onLoadingProccess(isLoading: model.isLoadingProccess)
 
         }
     }
@@ -86,7 +86,7 @@ struct MainView: View {
         let currentView = model.navigationStack.last ?? .home
         switch currentView {
         case .home: HomeView(model: model)
-        case .favorites: EmptyView()
+        case .favorites: FavoritesView(model: model)
         case .notifications: EmptyView()
         case .profile: EmptyView()
         }

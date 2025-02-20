@@ -25,9 +25,10 @@ final class SupabaseService {
         var sneakers: [Sneaker] = try await supabase.from("sneakers").select().execute().value
         for i in sneakers.indices {
             sneakers[i].imageULR = try await fetchImage(id: sneakers[i].id)
+            sneakers[i].countInBasket = 1
         }
         return sneakers
-
+        
     }
     func fetchImage(id: String, storage: String = "assets") async throws -> URL{
         try supabase.storage.from(storage).getPublicURL(path: "\(id).png", download: false)
@@ -55,19 +56,46 @@ final class SupabaseService {
         return favorites
     }
     func fetchCart(user: String) async throws -> [Sneaker] {
-            let response: [CartResponse] = try await supabase.from("cart").select().execute().value
-            
-            var cart: [Sneaker] = []
-            
-            for i in response.indices {
-                var sneakers: [Sneaker] = try await supabase.from("sneakers").select().eq("id", value: response[i].sneaker).execute().value
-                var sneak = sneakers.first!
-                sneak.countInBasket = response[i].count
-                cart.append(sneak)
-            }
-            for i in cart.indices {
-                cart[i].imageULR = try await fetchImage(id: cart[i].id)
-            }
-            return cart
+        let response: [CartResponse] = try await supabase.from("cart").select().execute().value
+        
+        var cart: [Sneaker] = []
+        
+        for i in response.indices {
+            var sneakers: [Sneaker] = try await supabase.from("sneakers").select().eq("id", value: response[i].sneaker).execute().value
+            var sneak = sneakers.first!
+            sneak.countInBasket = response[i].count
+            cart.append(sneak)
         }
+        for i in cart.indices {
+            cart[i].imageULR = try await fetchImage(id: cart[i].id)
+        }
+        return cart
+    }
+    func updateCountInCart(user: String, sneaker: String, value: Int = 1) async throws {
+        let response: [CartResponse] = try await supabase.from("cart").select().eq("user", value: user).eq("sneaker", value: sneaker).execute().value
+        if response != nil {
+            try await supabase.from("cart").update(["id" : (response.count).description, "sneaker" : sneaker, "count" : "\(response.first!.count+value)", "user" : user]).eq("user", value: user).eq("sneaker", value: sneaker).execute()
+        }
+    }
+    
+    func addCart(user: String, sneaker: String) async throws {
+        let response: [CartResponse] = try await supabase.from("cart").select().execute().value
+        try await supabase.from("cart").insert(["id" : (response.count + 1).description, "sneaker" : sneaker, "count" : "1", "user" : user]).execute()
+    }
+    func deleteFromCart(user: String, sneaker: String) async throws {
+        try await supabase.from("cart").delete().eq("user", value: user).eq("sneaker", value: sneaker).execute()
+
+    }
+    func fetchUser() async throws -> User {
+        try await supabase.auth.session.user
+    }
+    
+    func addToFavorite(sneaker: String, user: String) async throws {
+        let response: [FavoriteResponse] = try await supabase.from("favorites").select().execute().value
+
+        try await supabase.from("favorites").insert(["id" : (response.count + 1).description, "sneaker" : sneaker, "user" : user]).execute()
+    }
+    func deleteFromFavorite(sneaker: String, user: String) async throws {
+        try await supabase.from("favorites").delete().eq("user", value: user).eq("sneaker", value: sneaker).execute()
+    }
 }

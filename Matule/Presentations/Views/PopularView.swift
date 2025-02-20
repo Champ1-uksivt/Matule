@@ -24,7 +24,8 @@ struct PopularView: View {
                     Spacer()
                     Text("Популярное")
                     Spacer()
-                    NavigationLink(destination: FavoritesView()) {
+                    NavigationLink(destination: FavoritesView(model: model)
+                        .navigationBarBackButtonHidden()) {
                         ZStack {
                             Circle()
                                 .foregroundColor(Color.block)

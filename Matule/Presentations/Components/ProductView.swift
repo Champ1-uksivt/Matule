@@ -12,59 +12,81 @@ struct ProductView: View {
     @StateObject var model: MainViewModel
     var sneaker: Sneaker
     var body: some View {
-        VStack {
-            Spacer()
-            KFImage(sneaker.imageULR)
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 9)
-                .padding(.top, 18)
-                .padding(.bottom, 12)
-            Text(sneaker.bestseller ? "BEST SELLER" : "")
-                .customFont(fontSize: 12, weight: .regular, foreground: .accent)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 9)
-                .padding(.bottom, 8)
-            Text(sneaker.name)
-                .customFont(fontSize: 16, weight: .regular, foreground: .hint)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 9)
-            HStack {
-                Text(sneaker.price.price())
-                    .customFont(fontSize: 14, weight: .regular, foreground: .text)
-                    .padding(.horizontal, 9)
+        NavigationLink(destination: DetailsView(model: model)) {
+            VStack {
                 Spacer()
-                Button(action: {
+                KFImage(sneaker.imageULR)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.horizontal, 9)
+                    .padding(.top, 18)
+                    .padding(.bottom, 12)
+                Text(sneaker.bestseller ? "BEST SELLER" : "")
+                    .customFont(fontSize: 12, weight: .regular, foreground: .accent)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 9)
+                    .padding(.bottom, 8)
+                Text(sneaker.name)
+                    .customFont(fontSize: 16, weight: .regular, foreground: .hint)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 9)
+                HStack {
+                    Text(sneaker.price.price())
+                        .customFont(fontSize: 14, weight: .regular, foreground: .text)
+                        .padding(.horizontal, 9)
+                    Spacer()
+                    if model.cart.contains(where: {$0.id == sneaker.id}) {
+                        NavigationLink(destination: CartView(model: model).navigationBarBackButtonHidden()) {
+                            ZStack {
+                                CustomCorner(corners: [.topLeft, .bottomRight])
+                                    .foregroundColor(Color.accent)
+                                Image(model.cart.contains(where: {$0.id == sneaker.id}) ? "cart" : "plus")
+                            }
+                        }
+                        .frame(maxWidth: 34, maxHeight: 34)
+                    }
+                    else {
+                        Button(action: {
+                            model.updateCart(sneaker: sneaker)
+                            print(model.user)
+                        }) {
+                            ZStack {
+                                CustomCorner(corners: [.topLeft, .bottomRight])
+                                    .foregroundColor(Color.accent)
+                                Image(model.cart.contains(where: {$0.id == sneaker.id}) ? "cart" : "plus")
+                            }
+                        }
+                        .frame(maxWidth: 34, maxHeight: 34)
+                    }
                     
+                    
+                }
+                
+            }
+            .overlay {
+                Button(action: {
+                    if model.favorites.contains(where: {$0.id == sneaker.id}) {
+                        model.deleteFromFavorite(sneaker: sneaker)
+                    }
+                    else {
+                        model.addToFavorite(sneaker: sneaker)
+                    }
                 }) {
                     ZStack {
-                        CustomCorner(corners: [.topLeft, .bottomRight])
-                            .foregroundColor(Color.accent)
-                        Image("plus")
+                        Circle()
+                            .foregroundColor(Color.background)
+                        Image(model.favorites.contains(where: {$0.id == sneaker.id}) ? "heart.fill" : "heart.unfill")
+                        
                     }
+                    .frame(maxWidth: 28, maxHeight: 28)
                 }
-                .frame(maxWidth: 34, maxHeight: 34)
-
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(9)
             }
-            
+            .background(Color.block)
+            .cornerRadius(16)
+            .frame(maxWidth: UIScreen.main.bounds.width/2, maxHeight: UIScreen.main.bounds.height * 0.3)
         }
-        .overlay {
-                    Button(action: {}) {
-                        ZStack {
-                            Circle()
-                                .foregroundColor(Color.background)
-                            Image("heart.unfill")
-                                
-                        }
-                        .frame(maxWidth: 28, maxHeight: 28)
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .padding(9)
-                }
-        .background(Color.block)
-        .cornerRadius(16)
-        .frame(maxWidth: UIScreen.main.bounds.width/2, maxHeight: UIScreen.main.bounds.height * 0.3)
-        
     }
 }
 
