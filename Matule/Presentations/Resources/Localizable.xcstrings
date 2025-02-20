@@ -8,7 +8,20 @@
 
     },
     "%lld товара" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld items"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "%lld товара"
+          }
+        }
+      }
     },
     "BEST SELLER" : {
       "localizations" : {
@@ -115,7 +128,20 @@
       }
     },
     "В Корзину" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Cart"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "В Корзину"
+          }
+        }
+      }
     },
     "Войти" : {
       "localizations" : {
@@ -230,7 +256,20 @@
       }
     },
     "Доставка" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delivery"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Доставка"
+          }
+        }
+      }
     },
     "Заполните Свои Данные Или\nПродолжите Через Социальные Медиа" : {
       "localizations" : {
@@ -266,7 +305,20 @@
       }
     },
     "Итого" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Cost"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Итого"
+          }
+        }
+      }
     },
     "Категории" : {
       "localizations" : {
@@ -285,10 +337,36 @@
       }
     },
     "Корзина" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CART"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Корзина"
+          }
+        }
+      }
     },
     "Меньше" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hide"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Меньше"
+          }
+        }
+      }
     },
     "Начать" : {
       "localizations" : {
@@ -323,7 +401,20 @@
       }
     },
     "Оформить Заказ" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkout"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Оформить заказ"
+          }
+        }
+      }
     },
     "Ошибка" : {
       "localizations" : {
@@ -362,7 +453,20 @@
       }
     },
     "Подробнее" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Подробнее"
+          }
+        }
+      }
     },
     "Поиск" : {
       "localizations" : {
@@ -451,7 +555,20 @@
       }
     },
     "Сумма" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Total Cost"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Сумма"
+          }
+        }
+      }
     },
     "У Вас Есть Сила,\nЧтобы" : {
       "localizations" : {
