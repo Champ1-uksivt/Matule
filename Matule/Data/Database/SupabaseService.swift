@@ -39,4 +39,35 @@ final class SupabaseService {
         }
         return ads
     }
+    
+    func fetchFavorites(user: String) async throws -> [Sneaker] {
+        let response: [FavoriteResponse] = try await supabase.from("favorites").select().execute().value
+        
+        var favorites: [Sneaker] = []
+        
+        for i in response.indices {
+            var sneakers: [Sneaker] = try await supabase.from("sneakers").select().eq("id", value: response[i].sneaker).execute().value
+            favorites.append(sneakers.first!)
+        }
+        for i in favorites.indices {
+            favorites[i].imageULR = try await fetchImage(id: favorites[i].id)
+        }
+        return favorites
+    }
+    func fetchCart(user: String) async throws -> [Sneaker] {
+            let response: [CartResponse] = try await supabase.from("cart").select().execute().value
+            
+            var cart: [Sneaker] = []
+            
+            for i in response.indices {
+                var sneakers: [Sneaker] = try await supabase.from("sneakers").select().eq("id", value: response[i].sneaker).execute().value
+                var sneak = sneakers.first!
+                sneak.countInBasket = response[i].count
+                cart.append(sneak)
+            }
+            for i in cart.indices {
+                cart[i].imageULR = try await fetchImage(id: cart[i].id)
+            }
+            return cart
+        }
 }
