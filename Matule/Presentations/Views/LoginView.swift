@@ -14,19 +14,22 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.presentationMode) var pm
     @StateObject var model = LoginViewModel()
     var body: some View {
             VStack {
-                NavigationLink {
-                    MainView()
-                        .navigationBarBackButtonHidden()
+                Button {
+                    pm.wrappedValue.dismiss()
                 } label: {
-                    Text("Пропустить")
-                        .customFont(fontSize: 12, weight: .regular, foreground: .subTextDark)
+                    ZStack {
+                        Circle()
+                            .foregroundColor(Color.background)
+                        Image("arrow.left")
+                    }
                 }
-                .padding(.bottom, 62)
-                .padding(.top, 48)
-                .frame(maxWidth: .infinity, alignment: .trailing)
+                .frame(maxWidth: .infinity,maxHeight: 44, alignment: .leading)
+                .padding(.top, 66)
+                .padding(.bottom, 11)
 
                 Text("Привет!")
                     .customFont(fontSize: 32, weight: .regular, foreground: .text)
@@ -43,7 +46,7 @@ struct LoginView: View {
                     .padding(.bottom, 16)
                     .accessibilityIdentifier("password")
 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: ForgotPassword(model: model).navigationBarBackButtonHidden(), label: {
                     Text("Восстановить")
                         .customFont(fontSize: 12, weight: .regular, foreground: .subTextDark)
 
@@ -63,7 +66,7 @@ struct LoginView: View {
                 HStack {
                     Text("Вы впервые?")
                         .customFont(fontSize: 16, weight: .regular, foreground: .hint)
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: SignUp().navigationBarBackButtonHidden()) {
                         Text("Создать пользователя")
                             .customFont(fontSize: 16, weight: .regular, foreground: .text)
                     }
