@@ -10,11 +10,28 @@ import SwiftUI
 struct MainView: View {
     @StateObject var model = MainViewModel()
     var body: some View {
-        ZStack(alignment: .bottom) {
-            getCurrentView()
-            navigationBar
+        ZStack {
+            SideMenuView(model: model)
+            ZStack(alignment: .bottom) {
+                getCurrentView()
+                navigationBar
+            }
+            .disabled(model.showSideMenu)
+            .cornerRadius(40)
+            .offset(x: model.showSideMenu ? 290 : 0)
+            .scaleEffect(model.showSideMenu ? 0.8 : 1)
+            .rotationEffect(.degrees(model.showSideMenu ? -3.43 : 0))
+            .ignoresSafeArea(.all)
+            .shadow(color: .black.opacity(0.2), radius: 10)
+            .onTapGesture {
+                if model.showSideMenu {
+                    model.showSideMenu = false
+                }
+            }
+            .animation(.spring(duration: 1), value: model.showSideMenu)
         }
         .ignoresSafeArea(.all)
+
         
     }
     var navigationBar: some View {

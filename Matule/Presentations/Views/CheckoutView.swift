@@ -143,7 +143,7 @@ struct CheckoutView: View {
 
                 }
                 .padding(.bottom, 32)
-                Button(action: {showwi = false}) {
+                Button(action: {showwi = true}) {
                     Text("Подтвердить")
                 }
                 .buttonStyle(MainButtonStyle(background: .accent, foreground: .block))
@@ -185,7 +185,7 @@ struct CheckoutView: View {
                             .padding(.horizontal, 51.5)
                         
                     }
-                    .background(content: Color.block)
+                    .background(Color.block)
                     .cornerRadius(16)
                     .padding()
 

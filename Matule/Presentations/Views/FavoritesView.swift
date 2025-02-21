@@ -57,6 +57,7 @@ struct FavoritesView: View {
         }
         .padding(.top, 48)
         .background(Color.background)
+        .ignoresSafeArea(.all)
     }
 }
 

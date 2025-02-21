@@ -16,6 +16,7 @@ struct HomeView: View {
                 HStack {
                     Button(action: {
                         print("side menu")
+                        model.showSideMenu = true
                     }) {
                         Image("hamb")
                         

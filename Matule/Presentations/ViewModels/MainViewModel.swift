@@ -22,6 +22,7 @@ final class MainViewModel : ObservableObject {
     
     @Published var isLoading = false
     @Published var isConnected = false
+    @Published var showSideMenu = false
     @Published var isLoadingProccess = false
     @Published var sneakers: [Sneaker] = []
     @Published var categories: [Category] = []

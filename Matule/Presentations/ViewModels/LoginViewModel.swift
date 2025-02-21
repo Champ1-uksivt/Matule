@@ -131,4 +131,14 @@ final class LoginViewModel : ObservableObject {
             
         }
     }
+    func clear() {
+        Task {
+            do {
+                try await SupabaseService.shared.clear()
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
