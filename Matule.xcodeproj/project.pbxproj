@@ -70,6 +70,11 @@
 			path = MatuleUITests;
 			sourceTree = "<group>";
 		};
+		6E90B5622D68786500B47DE4 /* Publication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Publication;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 				6E371BDB2D6449CC007F78EC /* Matule */,
 				6E371BEC2D6449CE007F78EC /* MatuleTests */,
 				6E371BF62D6449CE007F78EC /* MatuleUITests */,
+				6E90B5622D68786500B47DE4 /* Publication */,
 				6E371BDA2D6449CC007F78EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6E371BDB2D6449CC007F78EC /* Matule */,
+				6E90B5622D68786500B47DE4 /* Publication */,
 			);
 			name = Matule;
 			packageProductDependencies = (
@@ -452,6 +459,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matule/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Matule-Mikhaylov";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -484,6 +493,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matule/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Matule-Mikhaylov";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
