@@ -2,8 +2,8 @@
 //  PDFReader.swift
 //  Matule
 //
-//  Created by uksivt on 20.02.2025.
-//
+//  Created by Михайлов on 20.02.2025.
+//  Чтение ПДФ
 
 import SwiftUI
 import PDFKit

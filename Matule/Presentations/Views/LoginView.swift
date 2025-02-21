@@ -90,6 +90,9 @@ struct LoginView: View {
             } message: {
                 Text(model.messageError)
             }
+            .onAppear {
+                model.clear()
+            }
 
         }
     

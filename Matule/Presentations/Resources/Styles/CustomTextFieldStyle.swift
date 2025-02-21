@@ -13,7 +13,7 @@ struct CustomTextFieldStyle : TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
             .padding(.horizontal, 14)
-            .frame(maxWidth: .infinity, maxHeight: 48)
+            .frame(maxWidth: .infinity, minHeight: 48, maxHeight: 48)
             .background(Color.background)
             .customFont(fontSize: 14, weight: .regular, foreground: .text)
             .autocorrectionDisabled()

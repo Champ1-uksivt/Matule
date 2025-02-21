@@ -2,8 +2,8 @@
 //  SignUp.swift
 //  Matule
 //
-//  Created by uksivt on 20.02.2025.
-//
+//  Created by Михайло евгений on 20.02.2025.
+//  Авторизация
 
 import SwiftUI
 

@@ -10,11 +10,28 @@ import SwiftUI
 struct MainView: View {
     @StateObject var model = MainViewModel()
     var body: some View {
-        ZStack(alignment: .bottom) {
-            getCurrentView()
-            navigationBar
+        ZStack {
+            SideMenuView(model: model)
+            ZStack(alignment: .bottom) {
+                getCurrentView()
+                navigationBar
+            }
+            .disabled(model.showSideMenu)
+            .cornerRadius(40)
+            .offset(x: model.showSideMenu ? 290 : 0)
+            .scaleEffect(model.showSideMenu ? 0.8 : 1)
+            .rotationEffect(.degrees(model.showSideMenu ? -3.43 : 0))
+            .ignoresSafeArea(.all)
+            .shadow(color: .black.opacity(0.2), radius: 10)
+            .onTapGesture {
+                if model.showSideMenu {
+                    model.showSideMenu = false
+                }
+            }
+            .animation(.spring(duration: 1), value: model.showSideMenu)
         }
         .ignoresSafeArea(.all)
+
         
     }
     var navigationBar: some View {
@@ -53,15 +70,16 @@ struct MainView: View {
                 .shadow(color: .accent.opacity(0.6), radius: 12, y: 7)
                 Spacer()
                 Button {
-                    
+                    model.navigationStack.append(.notifications)
                 } label: {
-                    Image("notifications.unselect")
+                    Image(model.navigationStack.last == .notifications ? "notifications.select" : "notifications.unselect")
                 }
                 Spacer()
                 Button {
-                    
+                    model.navigationStack.append(.profile)
+
                 } label: {
-                    Image("profile.unselect")
+                    Image(model.navigationStack.last == .profile ? "profile.select" : "profile.unselect")
                 }
                 
             }
@@ -87,8 +105,8 @@ struct MainView: View {
         switch currentView {
         case .home: HomeView(model: model)
         case .favorites: FavoritesView(model: model)
-        case .notifications: EmptyView()
-        case .profile: EmptyView()
+        case .notifications: NotificationView(model: model)
+        case .profile: ProfileView(model: model)
         }
     }
 }
