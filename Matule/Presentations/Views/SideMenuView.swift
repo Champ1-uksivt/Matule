@@ -2,8 +2,8 @@
 //  SideMenuView.swift
 //  Matule
 //
-//  Created by uksivt on 21.02.2025.
-//
+//  Created by Михайлов Евгений on 21.02.2025.
+//  Боковое меню
 
 import SwiftUI
 import Kingfisher
@@ -13,10 +13,7 @@ struct SideMenuView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
-                KFImage(URL(string: "https://dnhbfwerqzathenuvacj.supabase.co/storage/v1/object/public/users//3756c392-43c8-4cc4-b74d-b01d52bc37fc.jpg"))
-                    .placeholder({ progress in
-                        ProgressView()
-                    })
+                Image("ava")
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: 96)
@@ -24,12 +21,17 @@ struct SideMenuView: View {
                     .padding(.top, 78)
                     .padding(.horizontal, 15)
 
-                Text(model.user?.appMetadata["name"]?.stringValue ?? "Эмануэль Кверти")
+                Text("\(model.user?.userMetadata["name"]?.stringValue ?? "Эмануэль") \(model.user?.userMetadata["lastname"]?.stringValue ?? "Кверти")")
                     .customFont(fontSize: 20, weight: .regular, foreground: .block)
                     .padding(.horizontal, 15)
                     .padding(.bottom,55)
                 VStack(alignment: .leading, spacing: 30) {
-                    NavigationLink(destination: EmptyView()) {
+                    Button(action: {
+                        model.showSideMenu = false
+                        if model.navigationStack.last != .profile {
+                            model.navigationStack.append(.profile)
+                        }
+                    }) {
                         HStack(spacing: 22) {
                             Image("profile.white")
                             Text("Профиль")
@@ -53,7 +55,7 @@ struct SideMenuView: View {
                             
                         }
                     }
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: OrdersView(model: model).navigationBarBackButtonHidden()) {
                         HStack(spacing: 22) {
                             Image("delivary.white")
                             Text("Заказы")
@@ -61,7 +63,12 @@ struct SideMenuView: View {
                             
                         }
                     }
-                    NavigationLink(destination: EmptyView()) {
+                    Button(action: {
+                        model.showSideMenu = false
+                        if model.navigationStack.last != .notifications {
+                            model.navigationStack.append(.notifications)
+                        }
+                    }) {
                         HStack(spacing: 22) {
                             Image("notifications.white")
                             Text("Уведомления")
@@ -81,7 +88,7 @@ struct SideMenuView: View {
                         .frame(maxWidth: .infinity, maxHeight: 1.5)
                         .foregroundColor(Color.block.opacity(0.2))
                     
-                    NavigationLink(destination: LoginView()) {
+                    NavigationLink(destination: LoginView().navigationBarBackButtonHidden()) {
                         HStack(spacing: 22) {
                             Image("signout.white")
                             Text("Выйти")

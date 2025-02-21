@@ -12,16 +12,18 @@ struct CustomTextField: View {
     var placeholder: String
     @Binding var text: String
     var isSecure: Bool = false
-    init(label: LocalizedStringResource?, placeholder: String, text: Binding<String>, isSecure: Bool = false ) {
+    var space: CGFloat = 12
+    init(label: LocalizedStringResource?, placeholder: String, text: Binding<String>, isSecure: Bool = false, space: CGFloat = 12 ) {
         self.label = label
         self.placeholder = placeholder
         self._text = text
         self.isSecure = isSecure
+        self.space = space
     }
     @State var isShowPassword = false
     @FocusState var isFocused: Bool
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: space) {
             Group {
                 if label != nil {
                     Text(label!)

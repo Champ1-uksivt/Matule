@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import Auth
+import UIKit
 
 @MainActor
 final class MainViewModel : ObservableObject {
@@ -18,8 +19,9 @@ final class MainViewModel : ObservableObject {
             costDelivery = Double(cart.reduce(0) {$0 + ($1.countInBasket ?? 1) * 10})
         }
     }
+    @Published var light = UIScreen.main.brightness
     @Published var favorites = [Sneaker]()
-    
+    @Published var profileIsEditable = false
     @Published var isLoading = false
     @Published var isConnected = false
     @Published var showSideMenu = false
@@ -28,6 +30,7 @@ final class MainViewModel : ObservableObject {
     @Published var categories: [Category] = []
     @Published var address = ""
     @Published var ads: [Ad] = []
+    @Published var notifications: [NotificationModel] = []
     @Published var navigationStack: [Tabs] = [.home]
     @Published var selectedCategory = -1 {
         didSet {
@@ -55,6 +58,8 @@ final class MainViewModel : ObservableObject {
         fetchSneakers()
         fetchAds()
         fetchUser()
+        fetchNotification()
+        print(Date())
         
     }
     
@@ -239,6 +244,27 @@ final class MainViewModel : ObservableObject {
                 print(error.localizedDescription)
             }
             isLoading = false
+        }
+    }
+    func fetchNotification() {
+        Task {
+            do {
+                notifications = try await SupabaseService.shared.fetchNotification()
+                print(notifications)
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    func updateUserProfile() {
+        Task {
+            do{
+                try await SupabaseService.shared.updateProfile(name: user!.userMetadata["name"]?.stringValue ?? "", lastname: user!.userMetadata["lastname"]?.stringValue ?? "", address: user!.userMetadata["address"]?.stringValue ?? "", phone: user!.userMetadata["phone"]?.stringValue ?? "")
+            }
+            catch {
+                print(error.localizedDescription)
+            }
         }
     }
 }

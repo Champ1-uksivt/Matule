@@ -7,6 +7,16 @@
     "**** **** 0696 4629" : {
 
     },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
     "%lld" : {
 
     },
@@ -102,19 +112,71 @@
       }
     },
     "OTP Код" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTP Code"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "OTP Код"
+          }
+        }
+      }
     },
     "OTP проверка" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OTP Verification"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "OTP проверка"
+          }
+        }
+      }
     },
     "Sneaker Shop" : {
 
     },
     "Адрес" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Адрес"
+          }
+        }
+      }
     },
     "Адрес..." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Address…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Адрес…"
+          }
+        }
+      }
     },
     "Акции" : {
       "localizations" : {
@@ -165,13 +227,52 @@
       }
     },
     "Ваше имя" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Ваше имя"
+          }
+        }
+      }
     },
     "Введите Свою Учетную Запись\nДля Сброса" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your Email account to reset\nyour password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Введите Свою Учетную Запись\nДля Сброса"
+          }
+        }
+      }
     },
     "Вернуться к покупкам" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back To Shopping"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Вернуться к покупкам"
+          }
+        }
+      }
     },
     "Войти" : {
       "localizations" : {
@@ -238,10 +339,36 @@
       }
     },
     "Вы успешно\nоформили заказ" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Payment Is Successful"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Вы успешно\nоформили заказ"
+          }
+        }
+      }
     },
     "Выйти" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Out"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Выйти"
+          }
+        }
+      }
     },
     "Главная" : {
       "localizations" : {
@@ -276,7 +403,20 @@
       }
     },
     "Даю согласие на обработку персональных данных" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I agree to the processing of personal data"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Даю согласие на обработку персональных данных"
+          }
+        }
+      }
     },
     "ДОБРО\nПОЖАЛОВАТЬ" : {
       "localizations" : {
@@ -311,16 +451,68 @@
       }
     },
     "Есть аккаунт?" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already Have Account? "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Есть аккаунт?"
+          }
+        }
+      }
     },
     "Забыл пароль" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot Password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Забыл пароль"
+          }
+        }
+      }
     },
     "Задать пароль" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set new password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Задать пароль"
+          }
+        }
+      }
     },
     "Заказы" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orders"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Заказы"
+          }
+        }
+      }
     },
     "Заполните Свои Данные Или\nПродолжите Через Социальные Медиа" : {
       "localizations" : {
@@ -339,7 +531,20 @@
       }
     },
     "Зарегистрироваться" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Зарегистрироваться"
+          }
+        }
+      }
     },
     "Избранное" : {
       "localizations" : {
@@ -353,6 +558,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Избранное"
+          }
+        }
+      }
+    },
+    "Изменить фото профиль" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Profile Picture"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Изменить фото профиль"
+          }
+        }
+      }
+    },
+    "Имя" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Имя"
           }
         }
       }
@@ -390,7 +627,20 @@
       }
     },
     "Контактная информация" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact Information"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Контактная информация"
+          }
+        }
+      }
     },
     "Корзина" : {
       "localizations" : {
@@ -425,10 +675,36 @@
       }
     },
     "Мы Отправили Код Восстановления Пароля На Вашу Электронную Почту." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We have send password recovery code in your email"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Мы Отправили Код Восстановления Пароля На Вашу Электронную Почту."
+          }
+        }
+      }
     },
     "Настройки" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SETTINGS"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Настройки"
+          }
+        }
+      }
     },
     "Начать" : {
       "localizations" : {
@@ -462,11 +738,53 @@
         }
       }
     },
+    "НЕ УСПЕЛ😩" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DONT USPEL😩"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "НЕ УСПЕЛ😩"
+          }
+        }
+      }
+    },
     "Отправить" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Отправить"
+          }
+        }
+      }
     },
     "Отправить заново" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Send"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Отправить заново"
+          }
+        }
+      }
     },
     "Оформить Заказ" : {
       "localizations" : {
@@ -501,7 +819,14 @@
       }
     },
     "Ошибка сети" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка сети"
+          }
+        }
+      }
     },
     "Пароль" : {
       "extractionState" : "manual",
@@ -537,10 +862,36 @@
       }
     },
     "Подтвердить" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Подтвердить"
+          }
+        }
+      }
     },
     "Пожалуйста, проверьте свою электронную\nпочту, чтобы увидеть код подтверждения" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please check your email to see the verification code"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Пожалуйста, проверьте свою электронную\nпочту, чтобы увидеть код подтверждения"
+          }
+        }
+      }
     },
     "Поиск" : {
       "localizations" : {
@@ -559,7 +910,20 @@
       }
     },
     "Попробовать снова" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try Again"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Попробовать снова"
+          }
+        }
+      }
     },
     "Популярное" : {
       "localizations" : {
@@ -594,10 +958,30 @@
       }
     },
     "Проверьте Ваш Email" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your email"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Проверьте Ваш Email"
+          }
+        }
+      }
     },
     "Проверьте подключение к интернету" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверьте подключение к интернету"
+          }
+        }
+      }
     },
     "Пропустить" : {
       "extractionState" : "stale",
@@ -617,10 +1001,36 @@
       }
     },
     "Профиль" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Профиль"
+          }
+        }
+      }
     },
     "Регистрация" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register Account"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Регистрация"
+          }
+        }
+      }
     },
     "Создать пользователя" : {
       "localizations" : {
@@ -638,8 +1048,37 @@
         }
       }
     },
+    "Сохранить" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "save Now"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Сохранить"
+          }
+        }
+      }
+    },
     "Способ оплаты" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Payment Method"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Способ оплаты"
+          }
+        }
+      }
     },
     "Сумма" : {
       "localizations" : {
@@ -653,6 +1092,22 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Сумма"
+          }
+        }
+      }
+    },
+    "Телефон" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Телефон"
           }
         }
       }
@@ -674,7 +1129,20 @@
       }
     },
     "Уведомления" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Уведомления"
+          }
+        }
+      }
     },
     "Умная, великолепная и модная\nколлекция Изучите сейчас" : {
       "localizations" : {
@@ -688,6 +1156,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Умная, великолепная и модная\nколлекция Изучите сейчас"
+          }
+        }
+      }
+    },
+    "Фамилия" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last Name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Фамилия"
           }
         }
       }

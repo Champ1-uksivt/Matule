@@ -70,15 +70,16 @@ struct MainView: View {
                 .shadow(color: .accent.opacity(0.6), radius: 12, y: 7)
                 Spacer()
                 Button {
-                    
+                    model.navigationStack.append(.notifications)
                 } label: {
-                    Image("notifications.unselect")
+                    Image(model.navigationStack.last == .notifications ? "notifications.select" : "notifications.unselect")
                 }
                 Spacer()
                 Button {
-                    
+                    model.navigationStack.append(.profile)
+
                 } label: {
-                    Image("profile.unselect")
+                    Image(model.navigationStack.last == .profile ? "profile.select" : "profile.unselect")
                 }
                 
             }
@@ -104,8 +105,8 @@ struct MainView: View {
         switch currentView {
         case .home: HomeView(model: model)
         case .favorites: FavoritesView(model: model)
-        case .notifications: EmptyView()
-        case .profile: EmptyView()
+        case .notifications: NotificationView(model: model)
+        case .profile: ProfileView(model: model)
         }
     }
 }

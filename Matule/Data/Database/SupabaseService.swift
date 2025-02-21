@@ -118,4 +118,11 @@ final class SupabaseService {
     func updatePassword(password: String) async throws {
         try await supabase.auth.update(user: UserAttributes(password: password))
     }
+    func fetchNotification() async throws -> [NotificationModel] {
+        try await supabase.from("notifications").select().execute().value
+    }
+    
+    func updateProfile(name: String , lastname: String, address: String, phone: String) async throws {
+        try await supabase.auth.update(user: UserAttributes(data: ["name" : AnyJSON(name), "lastname" : AnyJSON(lastname), "phone" : AnyJSON(phone), "address" : AnyJSON(address)]))
+    }
  }
